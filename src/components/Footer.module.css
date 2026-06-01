@@ -1,0 +1,23 @@
+.footer {
+  background: var(--ink);
+  color: rgba(245, 241, 235, 0.4);
+  padding: 40px 60px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 10px;
+  letter-spacing: 0.15em;
+}
+
+.accent {
+  color: var(--rust);
+}
+
+@media (max-width: 640px) {
+  .footer {
+    flex-direction: column;
+    gap: 8px;
+    padding: 30px 28px;
+    text-align: center;
+  }
+}

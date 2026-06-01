@@ -1,0 +1,27 @@
+.item {
+  padding: 30px 0;
+  border-bottom: 1px solid var(--line);
+}
+
+.item:first-child { padding-top: 0; }
+.item:last-child  { border-bottom: none; padding-bottom: 0; }
+
+.year {
+  font-size: 10px;
+  color: var(--muted);
+  letter-spacing: 0.1em;
+  margin-bottom: 8px;
+}
+
+.degree {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 22px;
+  font-weight: 400;
+  margin-bottom: 4px;
+}
+
+.school {
+  font-size: 11px;
+  color: var(--rust);
+  letter-spacing: 0.08em;
+}

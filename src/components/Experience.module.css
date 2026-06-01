@@ -1,0 +1,78 @@
+.list { }
+
+.item {
+  display: grid;
+  grid-template-columns: 160px 1fr;
+  gap: 40px;
+  padding: 40px 0;
+  border-bottom: 1px solid var(--line);
+}
+
+.item:first-child { padding-top: 0; }
+.item:last-child  { border-bottom: none; padding-bottom: 0; }
+
+.date {
+  font-size: 10px;
+  letter-spacing: 0.08em;
+  color: var(--muted);
+  padding-top: 4px;
+  line-height: 1.8;
+}
+
+.dot {
+  display: inline-block;
+  width: 5px;
+  height: 5px;
+  background: var(--rust);
+  border-radius: 50%;
+  margin-right: 8px;
+  vertical-align: middle;
+  margin-top: -2px;
+}
+
+.title {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 1.2;
+  margin-bottom: 4px;
+}
+
+.company {
+  font-size: 10px;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: var(--rust);
+  margin-bottom: 14px;
+}
+
+.desc {
+  color: var(--muted);
+  font-size: 12px;
+  line-height: 1.9;
+}
+
+.bullets {
+  margin-top: 12px;
+  padding-left: 0;
+  list-style: none;
+}
+
+.bullets li {
+  padding: 3px 0 3px 16px;
+  position: relative;
+  color: var(--muted);
+  font-size: 12px;
+  line-height: 1.8;
+}
+
+.bullets li::before {
+  content: '—';
+  position: absolute;
+  left: 0;
+  color: var(--rust);
+}
+
+@media (max-width: 640px) {
+  .item { grid-template-columns: 1fr; gap: 10px; }
+}

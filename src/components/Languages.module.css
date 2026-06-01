@@ -1,0 +1,36 @@
+.grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 32px;
+}
+
+.item { }
+
+.langName {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 22px;
+  font-weight: 400;
+  margin-bottom: 10px;
+}
+
+.barWrap {
+  height: 2px;
+  background: var(--line);
+  margin-bottom: 8px;
+}
+
+.bar {
+  height: 100%;
+  background: var(--rust);
+  transition: width 1.3s cubic-bezier(0.4, 0, 0.2, 1) 0.2s;
+}
+
+.level {
+  font-size: 10px;
+  color: var(--muted);
+  letter-spacing: 0.08em;
+}
+
+@media (max-width: 640px) {
+  .grid { grid-template-columns: 1fr; }
+}
